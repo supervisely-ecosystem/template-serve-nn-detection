@@ -139,6 +139,23 @@ python main.py
   </table>
 </div>
 
+**Step 6.** Apply NN model to image or whole project/dataset
+
+<div>
+  <table>
+    <tr style="width: 100%">
+      <td>
+        <b>NN Image Labeling</b>
+        <img src="" style="width:100%;"/>
+      </td>
+      <td>
+        <b>Apply NN to Images Project</b>
+        <img src="" style="width:100%;"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
 ## Instance run:
 
 **Step 1.** Add [Template Serve NN Detection](https://ecosystem.supervise.ly/apps/supervisely-ecosystem%252Ftemplate-serve-nn-detection) to your team from Ecosystem
