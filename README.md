@@ -52,16 +52,21 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Note:** we provide a docker image with `cuda` runtime and it's dependencies, but if you need to use something specific, add it to the `requirements.txt`, or use your own docker image, please contact supervisely technical support for details
+**Note:** we provide a docker image with cuda runtime and it's dependencies, but if you need to use something specific, add it to the `requirements.txt`, or use your own docker image, please contact supervisely technical support for details
 
-# How To Use
+# How To Develop
 
-**Note:** recommended Python version for Supervisely >= 3.8
+**Note:** recommended Python version >= 3.8
 
 **Details:**
-By default template app generates demo predictions to demonstrate the functionality, in order to implement your custom model, you will need to edit `main.py`. Inference results will be automatically converted to [supervisely annotation format](https://docs.supervise.ly/data-organization/00_ann_format_navi).
+By default template app generates demo predictions to demonstrate the functionality. In order to implement your custom model, you will need to edit `main.py` file only. 
 
-`main.py` - contains 4 functions with commentaries to help you implement your custom nn model.
+`main.py` - contains 4 functions with commentaries to help you implement your custom nn model:
+
+* `get_classes_and_tags()` - constructs ProjectMeta object with specified model classes and tags.
+* `get_session_info()` - generates model info dict with any parameters (see recommended parameters in file).
+* `inference(image_path)` - this functions gets input image path and return model predictions on this image. See predictions format in file. Inference results will be automatically converted to [supervisely annotation format](https://docs.supervise.ly/data-organization/00_ann_format_navi).
+* `deploy_model(model_weights_path)` - function initializes model to be ready to get input data for inference.
 
 **Step 1.** Make sure you've edited `main.py`, without edits it will generate demo predictions
 
@@ -128,9 +133,7 @@ python main.py
 
 `video placeholder`
 
-# Related apps
-
-Learn how to use served models in the corresponding apps:
+**Step 7.** Once you integrated serving app for your model, you can use any available inference interfaces in Ecosystem:
 
 * [NN Image Labeling](https://ecosystem.supervise.ly/apps/supervisely-ecosystem%252Fnn-image-labeling%252Fannotation-tool) - **Apply served model to image** 
 
