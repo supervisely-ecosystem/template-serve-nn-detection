@@ -2,7 +2,7 @@
 
 <img src="https://github.com/supervisely-ecosystem/template-serve-nn-detection/releases/download/v0.0.1/poster.png" style="width: 100%;"/>
 
-# Template Serve NN Detection
+# Serve Custom Detection Model Template
 
 <p align="center">
   <a href="#overview">Overview</a> •
