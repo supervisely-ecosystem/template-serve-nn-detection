@@ -5,13 +5,13 @@
 # Template Serve NN Detection
 
 <p align="center">
-  <a href="#Overview">Overview</a> •
-  <a href="#Preparation">Preparation</a> •
-  <a href="#How-To-Use">How To Use</a> •
-  <a href="#How-To-Add-Model-As-App-[Enterprise-Edition-only]">How To Add Model As App</a> •
-  <a href="#How-To-Run">How To Run</a> •
-  <a href="#Related-Apps">Related Apps</a> •
-  <a href="#Result">Result</a>
+  <a href="#overview">Overview</a> •
+  <a href="#preparation">Preparation</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#how-to-add-model-as-app-enterprise-edition-only">How To Add Model As App</a> •
+  <a href="#how-to-run">How To Run</a> •
+  <a href="#related-apps">Related Apps</a> •
+  <a href="#result">Result</a>
 </p>
 
 
