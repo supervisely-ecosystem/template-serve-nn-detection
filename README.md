@@ -94,21 +94,19 @@ python main.py
 
 <img src="https://github.com/supervisely-ecosystem/template-serve-nn-detection/releases/download/v0.0.1/how-to-add-app-3.png" style="width:50%;"/>
 
-`video placeholder`
-
 # How To Run:
 
-**Step 1.** Add [Template Serve NN Detection](https://ecosystem.supervise.ly/apps/supervisely-ecosystem%252Ftemplate-serve-nn-detection) to your team from Ecosystem
+**Step 1.** Add app with implemented custom nn model to your team from Ecosystem
 
-<img src="" style="width:100%;"/>
+<img data-key="sly-module-link" data-module-slug="supervisely-ecosystem/template-serve-nn-detection" src="https://github.com/supervisely-ecosystem/template-serve-nn-detection/releases/download/v0.0.1/thumb.png" width="500px" style='padding-bottom: 20px'/>  
 
 **Step 2.** Run the application from the context menu of `.pth` file. If you are running application from file with different than `.pth` extension, app will use demo model
 
-<img src="" style="width:100%;"/>
+<img src="https://github.com/supervisely-ecosystem/template-serve-nn-detection/releases/download/v0.0.1/how-to-run-2.png" style="width:80%;"/>
 
 **Step 3.** Press the Run button in the modal window
 
-<img src="" style="width:100%;"/>
+<img src="https://github.com/supervisely-ecosystem/template-serve-nn-detection/releases/download/v0.0.1/modal.png" style="width:50%;"/>
 
 **Step 4.** Add one of the [related apps](https://github.com/supervisely-ecosystem/template-serve-nn-detection/edit/dev-readme/README.md#related-apps) to your team from Ecosystem and run it.
 
@@ -129,11 +127,10 @@ python main.py
   </table>
 </div>
 
-**Step 6.** Your served model is ready to apply
+**Step 6.** Your served model is ready to apply. 
 
-`video placeholder`
+Once you integrated serving app for your model, you can use any available inference interfaces in Ecosystem:
 
-**Step 7.** Once you integrated serving app for your model, you can use any available inference interfaces in Ecosystem:
 
 * [NN Image Labeling](https://ecosystem.supervise.ly/apps/supervisely-ecosystem%252Fnn-image-labeling%252Fannotation-tool) - **Apply served model to image** 
 
