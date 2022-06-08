@@ -124,22 +124,7 @@ python main.py
   </table>
 </div>
 
-**Step 6.** Apply NN model to image or whole project/dataset
-
-<div>
-  <table>
-    <tr style="width: 100%">
-      <td>
-        <b>NN Image Labeling</b>
-        <img src="" style="width:100%;"/>
-      </td>
-      <td>
-        <b>Apply NN to Images Project</b>
-        <img src="" style="width:100%;"/>
-      </td>
-    </tr>
-  </table>
-</div>
+**Step 6.** Your served model is ready to apply
 
 `video placeholder`
 
