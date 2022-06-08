@@ -28,47 +28,52 @@
 
 Template Serve NN Detection app is designed for **developers** and can be used as a starting point for creating an application for serving your own detection NN models on Supervisely.
 
-By default template app generates random predictions with random scores to demonstrate the functionality, in order to implement your custom model, you will need to edit **`main.py`**. Inference results will be automatically converted to [supervisely annotation format](https://docs.supervise.ly/data-organization/00_ann_format_navi).
-
 # Preparation
 
 **Step 1.** Make a fork from this repository
 
-**Step 2.** Download it to your computer
+**Step 2.** Clone repository to your computer
 
-# How To Use
-
-**Note:** recommended Python version for supervisely is 3.8.x
-
-**Step 1.** Create python virtual environment by running the following command from the application root directory in terminal:
+**Step 3.** Open repo directory and create python virtual environment by running the following command from the application root directory in terminal:
 
 ```bash
 python -m venv venv
 ```
 
-**Step 2.** Activate virtual environment:
+**Step 4.** Activate virtual environment:
 
 ```bash
 source venv/bin/activate
 ```
 
-**Step 4.** Install requirements.txt:
+**Step 5.** Install requirements.txt:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-**Step 5.** Make sure you've edited `main.py`, without edits it will generate random predictions
+**Note:** we provide a docker image with `cuda` runtime and it's dependencies, but if you need to use something specific, add it to the `requirements.txt`, or use your own docker image, please contact supervisely technical support for details
 
-**Step 6.** Run `main.py` from terminal or by using your IDE interface:
+# How To Use
+
+**Note:** recommended Python version for Supervisely >= 3.8
+
+**Details:**
+By default template app generates demo predictions to demonstrate the functionality, in order to implement your custom model, you will need to edit `main.py`. Inference results will be automatically converted to [supervisely annotation format](https://docs.supervise.ly/data-organization/00_ann_format_navi).
+
+`main.py` - contains 4 functions with commentaries to help you implement your custom nn model.
+
+**Step 1.** Make sure you've edited `main.py`, without edits it will generate demo predictions
+
+**Step 2.** Run `main.py` from terminal or by using your IDE interface:
 
 ```bash
 python main.py
 ```
 
-**Step 7.** When your model is ready, add additional modules that are required to run your served model to requirements.txt
+**Step 3.** When your model is ready, add additional modules and packages that are required to run your served model to `requirements.txt`
 
-**Step 8.** Add your model as private app to Supervisely Ecosystem
+**Step 4.** Add your model as private app to Supervisely Ecosystem
 
 # How To Add Model As App [Enterprise Edition only]
 
@@ -84,13 +89,15 @@ python main.py
 
 <img src="" style="width:100%;"/>
 
+`video placeholder`
+
 # How To Run:
 
 **Step 1.** Add [Template Serve NN Detection](https://ecosystem.supervise.ly/apps/supervisely-ecosystem%252Ftemplate-serve-nn-detection) to your team from Ecosystem
 
 <img src="" style="width:100%;"/>
 
-**Step 2.** Run the application from the context menu of `.pth` file. If you are running application from file with different than `.pth` extension, app will use default model with random predictions.
+**Step 2.** Run the application from the context menu of `.pth` file. If you are running application from file with different than `.pth` extension, app will use demo model
 
 <img src="" style="width:100%;"/>
 
@@ -134,6 +141,7 @@ python main.py
   </table>
 </div>
 
+`video placeholder`
 
 # Related apps
 
@@ -141,10 +149,3 @@ Learn how to use served models in the corresponding apps:
 
 * [NN Image Labeling](https://ecosystem.supervise.ly/apps/supervisely-ecosystem%252Fnn-image-labeling%252Fannotation-tool) - **Apply served model to image** 
 * [Apply NN to Images Project](https://ecosystem.supervise.ly/apps/supervisely-ecosystem%252Fnn-image-labeling%252Fproject-dataset) - **Apply served model to whole project or dataset**
-
-# Result
-
-<img src="" style="width:80%;"/>
-
-
-
